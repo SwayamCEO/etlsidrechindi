@@ -1,0 +1,2127 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum scale=1,user-scalable=yes">
+     
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+       
+       
+<style>          
+body{
+    margin: 0;
+    padding: 0;   
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: #FFF3E6 ; 
+    font-weight: bolder;
+}
+ 
+    
+ .main{
+    font-size : 21px;
+    padding-top: 60px;
+    font-feature-settings : 'lnum' 1;
+     font-family:sans-serif;
+    color : #2F2E2E;
+        
+    }
+
+ h1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    background-color: transparent;
+    margin-bottom: 50px;
+}
+ 
+ 
+ 
+ 
+body{
+    position: absolute;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul li a .icon
+{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+    
+ul li a .icon .fa
+{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 34px;
+     
+    transition: 0.5s;
+    color: #000;
+    top: 30px;
+}
+
+
+ul li a .icon .fa:last-child{
+    color:#e91e63;
+}
+
+ul li a:hover .icon .fa {
+    transform: translateY(-100%);
+    
+}
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #FFF;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	.header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+  .logo img {
+	width: 200px;
+    height: 80px;
+ 
+}
+    
+    
+ul li a .name
+{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    display: block;
+     
+} 
+
+ul li a .name span
+{
+  display: block;
+    position: relative;
+    color:  #000;
+    font-size: 18px;
+    line-height: 20px;
+    transition: 0.5s;
+    
+}
+
+ul li a .name span:before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: -100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    color: #e91e63;
+    
+}
+
+ul li a:hover .name span
+{   
+     background-color: white;
+     color: #e91e63;
+     transform: translateY(5px);
+}
+ 
+nav {
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  padding: 10px;
+  border-radius: 40px;
+  transform: scale(1.8);
+  overflow: hidden;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #53588b;
+  font-family:inherit;
+  font-size: 15px;
+  line-height: 1;
+  text-align: center;
+  display: inline-block;
+  width: 65px;
+  padding: 5px;
+  /* box-sizing: border-box; */
+  z-index: 2;
+}
+nav b {
+    font-size: 10px;
+    display: block;
+    left: 23%;
+    }
+nav a b {
+  position: relative;
+  top: 40px;
+  transition: 0.3s ease top;
+}
+
+nav a i {
+  position: relative;
+  left: 5%;
+    margin-top: 10px;
+  transition: 0.3s ease left;
+}
+
+nav span {
+  position: fixed;
+  width: 100px;
+  background-color: 	#FFFAFA;
+  top: 10px;
+  margin-top: 3px;
+  bottom: 10px;
+  left: 400px;
+  border-radius: 100px;
+  z-index: 1;
+  transition: 0.3s ease left;
+}
+
+nav a:hover b {
+  top: 0;
+}
+
+nav a:hover i {
+  left: 25%;
+}
+
+nav a:nth-child(1):hover ~ span {
+  left: 400px;
+}
+
+nav a:nth-child(2):hover ~ span {
+  left: 505px;
+}
+ 
+nav a:nth-child(3):hover ~ span {
+  left: 610px;
+}
+ 
+nav a:nth-child(4):hover ~ span {
+  left: 710px;
+}
+
+nav a:nth-child(5):hover ~ span {
+  left: 816px;
+}
+  
+nav a:nth-child(6):hover ~ span {
+  left: 921px;
+}
+  
+/*
+.sublimation{
+    width: 1100px;
+    max-width: 2000px;
+    font-size: 1.0em;  
+    margin: auto;    
+    background-color:#FFFFF0;  
+    border-radius: 5px;
+    margin-bottom: 50px;
+    -webkit-filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+    filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3)); 
+    box-shadow: 
+    0 2px 2px rgba(243,49,128,.5),
+    0 0px 5px rgba(243,49,128,.15),
+    0 0px 4px rgba(0,0,0,.35),
+    0 5px 20px rgba(243,49,128,.25),
+    0 5px 15px rgba(0,102,255,1),
+    inset 0 0 15px rgba(255,255,255,.05);
+    width: calc(60% - -420px);
+    }*/
+    
+ 
+table {
+  
+  width: 1400px;
+  max-width: 2000px;  
+  border-collapse: collapse;
+  border-radius: 2em;
+  overflow: hidden;
+  background-color:#FFF; 
+  margin-bottom: 50px;
+  font-size: 1.0em;  
+  -webkit-filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+  filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3)); 
+  width: calc(60%-420px);
+}
+    
+table, tr, td,th {
+    border: none;
+}
+td {
+      
+     padding-left: 10px;
+    padding-right: 10px;
+     vertical-align:baseline;     
+     text-align: justify-all;
+}
+    
+
+@media screen and (max-width: 300px) {
+  table {
+    border: 0;
+  }
+
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+      
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+    
+.suggest{
+width: 700px;        
+    }
+.criteria{
+        width: 500px;
+    }
+       
+     
+ select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  border-radius: 10px 10px 10px 10px;     
+   box-shadow: -1px 1px 1px rgba(0,0,0,0.15);
+   background: #F5FFFA;
+  background-image: none;
+     
+  
+     
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 15em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+    
+}
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: #000;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #8A2BE2;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: #fff;
+}
+ .select option {
+  font-size: 22px;
+    
+     
+}    
+.select option:hover {
+    color: black;
+}
+  
+table input[type="text"]{
+  background: lightblue ;
+  padding: 8px;
+  border-radius: 12px;
+  border: 0;
+  font-family: 'Lucida Grande', Serif;
+  font-size: 22px;  
+  font-weight: bold;
+  color: #2c3e50 ;
+
+    
+}
+    
+.button {
+  min-width: 250px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4FD1C5;
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(250px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  width: 30px; 
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
+}
+  
+       
+ </style>
+      
+ </head>
+   <body>
+    <div class="sublimation">
+	<header class="header">
+		<h1 class="logo"> <img src="images/logo1.png"></h1>
+     
+        
+    <ul class="main-nav" id="myTopnav">
+      <li><a href="../../firstpage.html">
+       <div class="icon">
+           <i class="fa fa-home" aria-hidden="true"></i> 
+             <i class="fa fa-home" aria-hidden="true"></i> 
+        </div>
+           <div class="name"><span data-text="">HOME</span></div>
+          </a>
+      </li>
+      <li><a href="../../about.html"> 
+           <div class="icon">
+          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+            <i class="fa fa-file-text-o" aria-hidden="true"></i> 
+        </div>
+        <div class="name"><span data-text="">ABOUT</span></div>
+          
+               </a>
+      </li>
+          
+      <li><a href="../../trades.html"> 
+        <div class="icon">
+           <i class="fa fa-cogs" aria-hidden="true"></i> 
+            <i class="fa fa-cogs" aria-hidden="true"></i> 
+        </div>
+         <div class="name"> <span data-text="">TRAINING</span></div>
+          </a></li>
+        
+      <li><a href="../Assessment.html"> 
+           <div class="icon">
+           <i class="fa fa-book" aria-hidden="true"></i> 
+            <i class="fa fa-book" aria-hidden="true"></i> 
+        </div>
+          <div class="name"><span data-text="">ASSESSMENT</span></div>
+          </a></li>
+        
+        <li><a href="../../contact.html"> 
+           <div class="icon">
+           <i class="fa fa-phone" aria-hidden="true"></i> 
+            <i class="fa fa-phone" aria-hidden="true"></i> 
+        </div>
+        <div class="name"><span data-text="">CONTACT</span></div>
+          </a></li>
+  </ul>
+	</header> 
+     <br> <br><br><br> 
+      
+             
+
+       
+ 
+      <center>
+      <table border="1" cellspacing="0">
+         <thead>
+              
+             <tr> <td align="center" colspan="8" bgcolor="#FFF" height="70"> 
+         
+              
+     <nav>
+  <a href="subli.html">
+            <i class="fa fa-coffee "></i>
+            <b>Sublimation</b>
+        </a>
+  <a href="computer.html">
+            <i class="fa fa-desktop"></i>
+            <b>Computer</b>
+        </a>
+  <a href="paperbag.html">
+            <i class="fa fa-shopping-bag"></i>
+            <b>PaperBag</b>
+        </a>
+          <a href="photocopy.html">
+            <i class="fa fa-camera"></i>
+            <b>Photocopy</b>
+        </a>
+  <a href="lamination.html">
+            <i class="fa fa-print"></i>
+            <b>Lamination</b>
+        </a>
+  <a href="artificialjewel.html">
+            <i class="fa fa-diamond"></i>
+            <b>Jewellerry</b>
+        </a>
+          <a href="soft_toy.html">
+            <i class="fa fa-child"></i>
+            <b>Soft Toy</b>
+        </a>
+         <a href="spiral.html">
+            <i class="fa fa-paperclip"></i>
+            <b>Spiral</b>
+        </a>
+         <a href="doormat.html">
+            <i class="fa-align-justify"></i>
+            <b>doormat</b>
+        </a>
+  <span></span>
+</nav>
+                 </td></tr></thead>  
+           <tr> <td align="center" colspan="8" bgcolor="#FFD700" height="100px"> <br><br>ARTIFICIALJEWELLERY CHECKLIST</td> </tr>
+            <tr>
+               <th width="20%" rowspan="2">Assessable Outcome</th>
+               <th width="35%" rowspan="2">Assessment Criteria</th>
+               <th width="10%" rowspan="2">Total Marks</th>
+               <th width="10%" rowspan="2">Out of</th>
+               <th width="25%" colspan="2">Marks Allocation</th>
+            </tr>
+            <tr>
+               <th width="12.5%">Theory</th>
+               <th width="12.5%">Skills Practical</th>
+            </tr>
+          
+         <tbody>
+            <tr>
+               <td rowspan="24">Spiral Binding</td>
+               <td>Clean the spiral binding machine with clean cotton cloth.</td>
+               <td rowspan="24" align="center">100</td>
+               <td align="center">10</td>
+               <td align="center">
+                   <div class="select">
+                    <select class="mark" id="dropdownMarkId">
+
+                     <option id="a1" class="a1" value1="0">0</option>
+                     <option id="a1" class="a1" value1="1">1</option>
+                     <option id="a1" class="a1"  value1="2">2</option>
+                     <option id="a1" class="a1"  value1="2">3</option>
+                                       </select>
+                   </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark1" id="dropdownMark1Id">
+                     <option id="b1" value11="0">0</option>
+                     <option id="b1" value11="1">1</option>
+                     <option id="b1" value11="2">2</option>
+                     <option id="b1" value11="3">3</option>
+                     <option id="b1" value11="4">4</option>
+                     <option id="b1" value11="5">5</option>
+                     <option id="b1" value11="6">6</option>
+                       <option id="b1" value11="7">7</option>
+                       
+                     
+                     </select>
+                   </div>
+               </td>
+            </tr>
+            <tr>
+              <td>Collect the  required material for spiral binding</td>
+               <td align="center">10</td>
+               <td align="center">
+                   <div class="select">
+                   <select class="mark" id="dropdownMarkId">
+
+                     <option id="a1" class="a1" value1="0">0</option>
+                     <option id="a1" class="a1" value1="1">1</option>
+                     <option id="a1" class="a1"  value1="2">2</option>
+                     <option id="a1" class="a1"  value1="2">3</option>
+                                       </select>
+                   </div>
+               </td>
+                   
+               <td align="center">
+                   <div class="select">
+                  <select class="mark1" id="dropdownMark1Id">
+                     <option id="b1" value11="0">0</option>
+                     <option id="b1" value11="1">1</option>
+                     <option id="b1" value11="2">2</option>
+                     <option id="b1" value11="3">3</option>
+                     <option id="b1" value11="4">4</option>
+                     <option id="b1" value11="5">5</option>
+                     <option id="b1" value11="6">6</option>
+                       <option id="b1" value11="7">7</option>
+                       
+                     
+                     </select>
+                   </div>
+               </td>
+            </tr>
+            <tr>
+              <td>Take 8-10 papers approximately from the spiral binding material</td>
+              <td align="center">10</td>
+              <td align="center">
+                  <div class="select">
+                  <select class="mark">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     
+                  </select>
+                  </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark1">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+                      
+                  </select>
+                   </div>
+                </td>
+            </tr>
+            <tr>
+               <td>Keep papers inside the spiral binding  machine for punching</td>
+              <td align="center">10</td>
+              <td align="center">
+                  <div class="select">
+                  <select class="mark">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     
+                  </select>
+                  </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark1">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+                      
+                  </select>
+                   </div>
+                </td>
+            </tr>
+            <tr>
+              <td>Move the  machine right handle down</td>
+              <td align="center">10</td>
+              <td align="center">
+                  <div class="select">
+                  <select class="mark">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     
+                  </select>
+                  </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark1">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+                      
+                  </select>
+                   </div>
+                </td>  
+            </tr>
+              <tr>
+                <td>Move the  machine right handle up</td>
+              <td align="center">10</td>
+              <td align="center">
+                  <div class="select">
+                  <select class="mark">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     
+                  </select>
+                  </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark1">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+                      
+                  </select>
+                   </div>
+                </td> 
+            </tr> <tr>
+               <td>Remove papers from spiral binding machine</td>
+              <td align="center">10</td>
+              <td align="center">
+                  <div class="select">
+                  <select class="mark">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     
+                  </select>
+                  </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark1">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+                      
+                  </select>
+                   </div>
+                </td> 
+            </tr> <tr>
+               <td>Keep papers uniformly</td>
+              <td align="center">10</td>
+              <td align="center">
+                  <div class="select">
+                  <select class="mark">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     
+                  </select>
+                  </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark1">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+                      
+                  </select>
+                   </div>
+                </td> 
+            </tr> <tr>
+              <td>Again take 8-10 papers and set the papers correctly in the spiral binding machine do the activity  till material completed</td>
+              <td align="center">10</td>
+              <td align="center">
+                  <div class="select">
+                  <select class="mark">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     
+                  </select>
+                  </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark1">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+                      
+                  </select>
+                   </div>
+                </td> 
+            </tr> <tr>
+               <td>Keep papers uniformly</td>
+              <td align="center">10</td>
+              <td align="center">
+                  <div class="select">
+                  <select class="mark">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     
+                  </select>
+                  </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark1">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+                      
+                  </select>
+                   </div>
+                </td> 
+            </tr> <tr>
+               
+            </tr> <tr>
+               
+            </tr> <tr>
+               
+            </tr> <tr>
+               
+            </tr> <tr>
+              
+            </tr> <tr>
+               
+            </tr> <tr>
+              
+            </tr> <tr>
+               
+            </tr> <tr>
+               
+            </tr> <tr>
+               
+            </tr> <tr>
+              
+            </tr> <tr>
+              
+            </tr> <tr>
+               
+            </tr>
+             <tr>
+               
+            </tr>
+            <tr>
+               <td></td>
+               <td>Total</td>
+               <td align="center">100</td>
+               <td align="center">100</td>
+               <td align="center"><input type="text" id="sum" class="forgrand" disabled/></td>
+               <td align="center"><input type="text" id="sum1" class="forgrand1" disabled/></td>
+            </tr>
+            <tr>
+               <td rowspan="20">Finishing the end product</td>
+               <td>Organise the required materials </td>
+              <td rowspan="20" align="center">100</td>
+               <td align="center">10</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark3">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                    
+                  </select>
+                   </div>
+                </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark4">
+                      <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 
+                  </select>
+                   </div>
+                </td>
+            </tr>
+            <tr>
+               <td>Take front and back sheets covers</td>
+               <td align="center">10</td>
+               <td align="center">
+                   <div class="select">
+                   <select class="mark3">
+                      <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                    
+                  </select>
+                   </div>
+                </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark4">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 
+                  </select>
+                   </div>
+                </td>
+            </tr>
+           <tr>
+               <td>Put inside the spiral binding machine for punching</td>
+               <td align="center">10</td>
+               <td align="center">
+                  <div class="select">
+                   <select class="mark3">
+                     0
+                  </select>
+                   </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark4">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 
+                  </select>
+                   </div>
+               </td>
+            </tr>
+           <tr>
+               <td>Arrange those sheets front and back side of the material</td>
+               <td align="center">10</td>
+               <td align="center">
+                   <div class="select">
+                   <select class="mark3">
+                      <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                    
+                  </select>
+                   </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark4">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+                  </select>
+                   </div>
+               </td>
+            </tr>
+             
+             <tr>
+               <td>Select and cut the spiral wire size (more than size approximately</td>
+               <td align="center">10</td>
+               <td align="center">
+                   <div class="select">
+                   <select class="mark3">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                  </select>
+                   </div>
+                 </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark4">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 
+                  </select>
+                   </div>
+                 </td>
+            </tr><tr>
+               <td>Put the spiral wire in the first punching of the book binding material </td>
+               <td align="center">10</td>
+               <td align="center">
+                   <div class="select">
+                   <select class="mark3">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                    
+                  </select>
+                   </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark4">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>Continue the binding work till last</td>
+               <td align="center">10</td>
+               <td align="center">
+                   <div class="select">
+                   <select class="mark3">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                  </select>
+                   </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark4">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>Handing over the finished product</td>
+               <td align="center">5</td>
+               <td align="center">
+                   <div class="select">
+                   <select class="mark3">
+                      <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                    
+                  </select>
+                   </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark4">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>Asking for next task</td>
+               <td align="center">5</td>
+               <td align="center">
+                   <div class="select">
+                   <select class="mark3">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                    
+                  </select>
+                   </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark4">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               
+            </tr><tr>
+               
+            </tr><tr>
+               
+            </tr><tr>
+              
+            </tr><tr>
+               
+            </tr><tr>
+             
+            </tr><tr>
+               
+            </tr><tr>
+               
+            </tr><tr>
+               
+             
+            </tr><tr>
+               
+            </tr><tr>
+               
+            </tr>
+             
+            <tr>
+               <td></td>
+               <td>Total</td>
+               <td align="center">100</td>
+               <td align="center">100</td>
+               <td align="center"><input type="text" id="sum2" class="forgrand" disabled/></td>
+               <td align="center"><input type="text" id="sum3" class="forgrand1" disabled/></td>
+            </tr>
+            <tr>
+               <td rowspan="22"></td>
+               <td>Identify and names and uses of spiral binding required  material</td>
+               <td rowspan="22" align="center">100</td>
+               <td align="center">10</td>
+			   <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                      <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                  </select>
+                   </div>
+                </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+                  </select>
+                   </div>
+                </td>
+            </tr>
+            <tr>
+               <td>Punctuality in work place </td>
+               <td align="center">10</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                      <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                  </select>
+                   </div>
+                </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					  
+                  </select>
+                   </div>
+                </td>
+            </tr>
+           <tr>
+               <td>Greet the supervisor and team members</td>
+               <td align="center">10</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                      <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                  </select>
+                   </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 
+					 
+                  </select>
+                   </div>
+               </td>
+            </tr>
+             <tr>
+               <td>Handle carefully materials when it uses </td>
+               <td align="center">4.5</td>
+               <td align="center">
+                   <div class="select">
+                 <select class="mark5">
+                      <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                  </select>
+                   </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 
+				
+                  </select>
+                   </div>
+                 </td>
+            </tr>
+             <tr>
+               <td>Reserves materials , equipments safety after use</td>
+               <td align="center">5</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                      <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                  </select>
+                   </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 
+				
+                  </select>
+                   </div>
+                 </td>
+            </tr>
+              <tr>
+               <td>Report to the responsible person when the work is disturbs </td>
+               <td align="center">3</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                      <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                  </select>
+                   </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 
+				
+                     
+                    
+                  </select>
+                   </div>
+                  </td>
+            </tr> <tr>
+               <td>Minimize the waste</td>
+               <td align="center">4.5</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                      <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                  </select>
+                   </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 
+				
+					  
+                  </select>
+                   </div>
+             </td>
+            </tr> <tr>
+               <td>Seek clarifications from supervisors or other authorized personnel in case of perceived risks </td>
+               <td align="center">3</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                      <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                  </select>
+                   </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 
+				
+					  
+                  </select>
+                   </div>
+             </td>
+            </tr> <tr>
+               <td>Follow the Instructions </td>
+               <td align="center"> 5</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                      <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                  </select>
+                   </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 
+				
+                  </select>
+                   </div>
+             </td>
+            </tr> <tr>
+               <td>Seek information regarding policies, and procedures from supervisor or other authorized personnel. </td>
+               <td align="center"> 5</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                      <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                  </select>
+                   </div>
+               </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                    <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 
+				  </select>
+                   </div>
+             </td>
+            </tr> <tr>
+               
+            </tr> <tr>
+               
+            </tr> <tr>
+               
+            </tr> <tr>
+              
+            </tr> <tr>
+               
+            </tr> <tr>
+               
+            </tr> <tr>
+              
+            </tr> <tr>
+               
+            </tr> <tr>
+               
+            </tr> <tr>
+               
+            </tr>
+             <tr>
+               
+            </tr><tr>
+               
+            </tr>
+             
+            
+            <tr>
+               <td></td>
+               <td>Total</td>
+               <td align="center">100</td>
+               <td align="center">100</td>
+               <td align="center"><input type="text" id="sum4" class="forgrand" disabled/></td>
+               <td align="center"><input type="text" id="sum5" class="forgrand1" disabled/></td>
+            </tr>
+           
+             
+            <tr>
+               
+            </tr>
+            <tr>
+              
+            </tr>
+             
+             <tr>
+               
+            </tr><tr>
+              
+            
+            </tr><tr>
+              
+            </tr><tr>
+               
+            </tr><tr>
+               
+            </tr><tr>
+                   </tr><tr>
+              
+            </tr><tr>
+              
+            </tr><tr>
+               
+            </tr><tr>
+              
+            </tr><tr>
+               
+            </tr><tr>
+              
+            </tr><tr>
+              
+            </tr><tr>
+              
+            </tr><tr>
+               
+            </tr><tr>
+               
+            </tr><tr>
+               
+            </tr>
+            
+            <tr>
+               
+            </tr>
+            <tr>
+              
+            </tr>
+            <tr>
+               
+            </tr>
+            <tr>
+             
+            </tr>
+                             
+                  <tr>
+               
+            </tr>  <tr>
+               
+            </tr>  <tr>
+               
+            </tr>
+             
+            
+            <tr>
+              </tr>
+             
+             <tr>
+               
+            </tr>
+            <tr>
+              
+            </tr><tr>
+               
+            </tr><tr>
+               
+            </tr>
+               <tr>
+               
+            </tr>
+            <tr>
+               <td></td>
+               <td>Grand Total</td>
+               <td></td>
+               <td align="center">300</td>
+               <td align="center"><input type="text" id="grand1" disabled/></td>
+               <td align="center"><input type="text" id="grand2" disabled/></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Percentage weight age</td>
+               <td></td>
+               <td></td>
+               <td align="center"><input type="text" id="gp"   disabled/></td>
+               <td align="center"><input type="text" id="gp1"  disabled/></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Minimum pass % to qualify
+                  (aggregate)
+               </td>
+               <td colspan="4" align="center"> <br><br>60%<br><br><br></td>
+            </tr>
+         </tbody>
+      </table>
+          
+<center>       
+<table class="suggest">
+<tbody>
+<tr>
+<td colspan="6" width="599">
+<p>Validate Suggestion</p>
+</td>
+</tr>
+<tr>
+<td width="172">
+<p>&nbsp;</p>
+</td>
+<td width="52">
+<p>Out of</p>
+</td>
+<td width="75">
+<p>Theory</p>
+</td>
+<td width="104">
+<p>Skills Practical</p>
+</td>
+<td width="52">
+<p>Total</p>
+</td>
+<td width="144">
+<p>Recognition</p>
+</td>
+</tr>
+<tr>
+<td width="172">
+<p>GRAND TOTAL</p>
+</td>
+<td width="52">
+<p>300</p>
+</td>
+<td width="75">
+<p>90</p>
+</td>
+<td width="104">
+<p>210</p>
+</td>
+<td width="52">
+
+</td>
+<td rowspan="3" width="144">
+<p>&nbsp;</p>
+<p>Approved</p>
+</td>
+</tr>
+<tr>
+<td width="172">
+<p>PERCENTAGE WEIGHTAGE</p>
+</td>
+<td width="52">
+<p>&nbsp;</p>
+</td>
+<td width="75">
+<p>30%</p>
+</td>
+<td width="104">
+<p>70%</p>
+</td>
+<td width="52">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="172">
+<p>STATUS</p>
+</td>
+<td width="52">
+<p>&nbsp;</p>
+</td>
+<td width="75">
+<p>Pass</p>
+</td>
+<td width="104">
+<p>Pass</p>
+</td>
+<td width="52">
+<p>Pass</p>
+</td>
+</tr>
+<tr>
+<td colspan="6" width="599">
+<p>General Information</p>
+</td>
+</tr>
+<tr>
+<td colspan="6" width="599">
+ 
+    
+    
+<center>
+<table class="criteria" width="135">
+<tbody>
+<tr>
+<td bgcolor="red" width="100">
+<p>Below 30%</p>
+</td>
+<td bgcolor="red" width="235">
+<p>needs exclusive training</p>
+</td>
+</tr>
+<tr>
+<td  bgcolor="yellow" width="100">
+<p>30%- 60%</p>
+</td>
+<td bgcolor="yellow" width="235">
+<p>needs concurrent training</p>
+</td>
+</tr>
+<tr>
+<td bgcolor="orange" width="100">
+<p>60%- 80%</p>
+</td>
+<td bgcolor="orange" width="235">
+<p>concurrent training along with other training</p>
+</td>
+</tr>
+<tr>
+<td  bgcolor="green" width="100">
+<p>above&nbsp; 80%</p>
+</td>
+<td  bgcolor="green"width="235">
+<p>promoted for skill training</p>
+</td>
+</tr>
+</tbody>
+</table>
+</center>    
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+          
+      <br><br> 
+          
+         <div class="wrap">
+                      <button class="button" type="submit" name="submit_btn" value="input">SUBMIT</button>
+                      </div></center>
+                   <br><br> <br><br>     
+          
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script type="text/javascript">
+         $('.mark').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum').val(sum);
+              
+         }); 
+         
+         $('.mark1').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark1').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum1').val(sum);
+              
+         }); 
+         
+                  $('body').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.forgrand').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#grand1').val(sum);
+               document.getElementById('gp').value=(sum/90) * 100; 
+              
+         }); 
+         
+            $('body').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.forgrand1').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#grand2').val(sum);
+                $('#grand1').val(sum);
+               document.getElementById('gp1').value=(sum/210) * 100; 
+              
+         }); 
+         
+         $('.mark3').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark3').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum2').val(sum);
+              
+         }); 
+         
+         $('.mark4').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark4').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum3').val(sum);
+              
+         });   
+         
+         $('.mark5').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark5').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum4').val(sum);
+              
+         }); 
+         
+         $('.mark6').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark6').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum5').val(sum);
+              
+         }); 
+         
+         $('.mark7').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark7').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum6').val(sum);
+              
+         }); 
+         
+         $('.mark8').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark8').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum7').val(sum);
+              
+         }); 
+         
+         $('.mark9').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark9').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum8').val(sum);
+              
+         }); 
+         
+         $('.mark10').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark10').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum9').val(sum);
+              
+         }); 
+         
+          $('.mark11').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark11').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum10').val(sum);
+              
+         }); 
+         
+           $('.mark12').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark12').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum11').val(sum);
+              
+         }); 
+         
+      </script>
+        </center>
+       </div>
+   </body>
+</html>

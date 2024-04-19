@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+body, html {
+  height: 100%;
+     width: 100%;
+   margin: 0;
+ }
+ 
+ .bg {
+   /* The image used */
+   
+   /* Full height */
+   height: 100%;
+     width: 100%;
+   /* Center and scale the image nicely */
+   background-position:top;
+   background-repeat: no-repeat;
+   background-size: cover;
+     
+ }
+ .ti{
+
+  position: absolute;
+  top: 3vh;
+  width: 11vw;
+  height: 11vh;
+  z-index: 1;
+ }
+ #home{
+  left: 64vw;
+ }
+ #about{
+  left: 77vw;
+ }
+ #contact{
+  left: 89vw;
+ }
+ .bi{
+  
+  position: absolute;
+  left: 70vw;
+/*   background-color: black; */
+  width: 25vw;
+  height: 10vh;
+  z-index: 1;
+  
+ }
+ #curriculum{
+  top: 68vh;
+ }
+ #assessment{
+  top: 80vh;
+ }
+ #assessmentt{
+  width: 5vw;
+  height: 9vh;
+  top: 55vh;
+  left: 76.5vw;
+ }
+#trades{
+  position: absolute;
+  top:35vh;
+  left: 35.5vw;
+ }
+ .trade{
+  position:relative;
+  width: 30vw;
+  height:5vh;
+  /* background-color: rgb(23, 120, 230); */
+ }
+ #curriculumt{
+  top: 15vh;
+  width: 20vw;
+  /* background-color: black; */
+ }
+ .pt{
+  width: 9vw;
+  height: 15vh;
+  /* background-color: black; */
+ }
+ #ts{
+  top: 40vh;
+  left: 62vw;
+  row-gap: 8vh;
+  column-gap:2vw ;
+ }
+ #ts1{
+  top: 35vh;
+  left: 62vw;
+  row-gap: 5vh;
+  column-gap:1vw ;
+  /* background-color: black; */
+ }
+#computervp{
+  /* background-color: black; */
+  top: 88vh;
+  left: 2vw;
+  width: 23vw;
+
+}
+.video-player{
+  position: absolute;
+  top:31vh;
+  left:5vw;
+  width:42vw;
+  height:27vh;
+}
+video{
+  width: cover;
+  height: cover;
+}
+.playbutton{
+  position: absolute;
+  width: 35vw;
+  height: 5vh;
+  /* background-color: black; */
+}
+#start{
+  width: 22vw;
+  height: 7vh;
+  left: 27vw;
+  top: 90vh;
+}
+#pretraining{
+  width: 22vw;
+  height: 7vh;
+  left: 3vw;
+  top: 90vh;
+  /* background-color: black; */
+}
+#first{
+  left: 60vw;
+  top: 39vh;
+}
+#second{
+  left: 60vw;
+  top: 46vh;
+}
+#third{
+  left: 60vw;
+  top: 52vh;
+}
+#fourth{
+  left: 60vw;
+  top: 58vh;
+}
+#fifth{
+  left: 60vw;
+  top: 64vh;
+}
+#sixth{
+  left: 60vw;
+  top: 70vh;
+}
+#seventh{
+  left: 60vw;
+  top: 76vh;
+}
+
+/* .pc{
+  width: fit-content;
+  position: absolute;
+  top: 10vh;
+  left: 50vw;
+  display: flex;
+  flex-direction: column;
+  column-gap: 30px;
+  background-color: black;
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

@@ -1,0 +1,4562 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum scale=1,user-scalable=yes">
+     
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+       
+       
+<style>          
+body{
+    margin: 0;
+    padding: 0;   
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: #FFF3E6 ; 
+    font-weight: bolder;
+}
+ 
+    
+ .main{
+    font-size : 21px;
+    padding-top: 60px;
+    font-feature-settings : 'lnum' 1;
+     font-family:sans-serif;
+    color : #2F2E2E;
+        
+    }
+
+ h1{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    background-color: transparent;
+    margin-bottom: 50px;
+}
+ 
+ 
+ 
+ 
+body{
+    position: absolute;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100vh;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul li a .icon
+{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+    
+ul li a .icon .fa
+{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 34px;
+     
+    transition: 0.5s;
+    color: #000;
+    top: 30px;
+}
+
+
+ul li a .icon .fa:last-child{
+    color:#e91e63;
+}
+
+ul li a:hover .icon .fa {
+    transform: translateY(-100%);
+    
+}
+
+.logo {
+	margin: 0;
+	font-size: 1.45em;
+}
+
+.main-nav {
+	margin-top: 5px;
+
+}
+.logo a,
+.main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #FFF;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+    	.header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+	}
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+  .logo img {
+	width: 200px;
+    height: 80px;
+ 
+}
+    
+    
+ul li a .name
+{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    display: block;
+     
+} 
+
+ul li a .name span
+{
+  display: block;
+    position: relative;
+    color:  #000;
+    font-size: 18px;
+    line-height: 20px;
+    transition: 0.5s;
+    
+}
+
+ul li a .name span:before
+{
+    content: attr(data-text);
+    position: absolute;
+    top: -100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    color: #e91e63;
+    
+}
+
+ul li a:hover .name span
+{   
+     background-color: white;
+     color: #e91e63;
+     transform: translateY(5px);
+}
+ 
+nav {
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  padding: 10px;
+  border-radius: 40px;
+  transform: scale(1.8);
+  overflow: hidden;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #53588b;
+  font-family:inherit;
+  font-size: 15px;
+  line-height: 1;
+  text-align: center;
+  display: inline-block;
+  width: 65px;
+  padding: 5px;
+  /* box-sizing: border-box; */
+  z-index: 2;
+}
+nav b {
+    font-size: 10px;
+    display: block;
+    left: 23%;
+    }
+nav a b {
+  position: relative;
+  top: 40px;
+  transition: 0.3s ease top;
+}
+
+nav a i {
+  position: relative;
+  left: 5%;
+    margin-top: 10px;
+  transition: 0.3s ease left;
+}
+
+nav span {
+  position: fixed;
+  width: 100px;
+  background-color: 	#FFFAFA;
+  top: 10px;
+  margin-top: 3px;
+  bottom: 10px;
+  left: 400px;
+  border-radius: 100px;
+  z-index: 1;
+  transition: 0.3s ease left;
+}
+
+nav a:hover b {
+  top: 0;
+}
+
+nav a:hover i {
+  left: 25%;
+}
+
+nav a:nth-child(1):hover ~ span {
+  left: 400px;
+}
+
+nav a:nth-child(2):hover ~ span {
+  left: 505px;
+}
+ 
+nav a:nth-child(3):hover ~ span {
+  left: 610px;
+}
+ 
+nav a:nth-child(4):hover ~ span {
+  left: 710px;
+}
+
+nav a:nth-child(5):hover ~ span {
+  left: 816px;
+}
+  
+nav a:nth-child(6):hover ~ span {
+  left: 921px;
+}
+  
+/*
+.sublimation{
+    width: 1100px;
+    max-width: 2000px;
+    font-size: 1.0em;  
+    margin: auto;    
+    background-color:#FFFFF0;  
+    border-radius: 5px;
+    margin-bottom: 50px;
+    -webkit-filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+    filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3)); 
+    box-shadow: 
+    0 2px 2px rgba(243,49,128,.5),
+    0 0px 5px rgba(243,49,128,.15),
+    0 0px 4px rgba(0,0,0,.35),
+    0 5px 20px rgba(243,49,128,.25),
+    0 5px 15px rgba(0,102,255,1),
+    inset 0 0 15px rgba(255,255,255,.05);
+    width: calc(60% - -420px);
+    }*/
+    
+ 
+table {
+  
+  width: 1400px;
+  max-width: 2000px;  
+  border-collapse: collapse;
+  border-radius: 2em;
+  overflow: hidden;
+  background-color:#FFF; 
+  margin-bottom: 50px;
+  font-size: 1.0em;  
+  -webkit-filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3));
+  filter: drop-shadow(1px 2px 5px rgba(0,0,0,.3)); 
+  width: calc(60%-420px);
+}
+    
+table, tr, td,th {
+    border: none;
+}
+td {
+      
+     padding-left: 10px;
+    padding-right: 10px;
+     vertical-align:baseline;     
+     text-align: justify-all;
+}
+    
+
+@media screen and (max-width: 300px) {
+  table {
+    border: 0;
+  }
+
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+      
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+    
+.suggest{
+width: 700px;        
+    }
+.criteria{
+        width: 500px;
+    }
+       
+     
+ select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  border-radius: 10px 10px 10px 10px;     
+   box-shadow: -1px 1px 1px rgba(0,0,0,0.15);
+   background: #F5FFFA;
+  background-image: none;
+     
+  
+     
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 15em;
+  height: 3em;
+  line-height: 3;
+  background: #2c3e50;
+  overflow: hidden;
+  border-radius: .25em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+    
+}
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: #000;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #8A2BE2;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+/* Transition */
+.select:hover::after {
+  color: #fff;
+}
+ .select option {
+  font-size: 22px;
+    
+     
+}    
+.select option:hover {
+    color: black;
+}
+  
+table input[type="text"]{
+  background: lightblue ;
+  padding: 8px;
+  border-radius: 12px;
+  border: 0;
+  font-family: 'Lucida Grande', Serif;
+  font-size: 22px;  
+  font-weight: bold;
+  color: #2c3e50 ;
+
+    
+}
+    
+.button {
+  min-width: 250px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  background: #4FD1C5;
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(250px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  width: 30px; 
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
+}
+  
+       
+ </style>
+      
+ </head>
+   <body>
+    <div class="sublimation">
+	<header class="header">
+		<h1 class="logo"> <img src="images/logo1.png"></h1>
+     
+        
+      <ul class="main-nav" id="myTopnav">
+         <li><a href="../../firstpage.html">
+          <div class="icon">
+              <i class="fa fa-home" aria-hidden="true"></i> 
+                <i class="fa fa-home" aria-hidden="true"></i> 
+           </div>
+              <div class="name"><span data-text="">HOME</span></div>
+             </a>
+         </li>
+         <li><a href="../../about.html"> 
+              <div class="icon">
+             <i class="fa fa-file-text-o" aria-hidden="true"></i>
+               <i class="fa fa-file-text-o" aria-hidden="true"></i> 
+           </div>
+           <div class="name"><span data-text="">ABOUT</span></div>
+             
+                  </a>
+         </li>
+             
+         <li><a href="../../trades.html"> 
+           <div class="icon">
+              <i class="fa fa-cogs" aria-hidden="true"></i> 
+               <i class="fa fa-cogs" aria-hidden="true"></i> 
+           </div>
+            <div class="name"> <span data-text="">TRAINING</span></div>
+             </a></li>
+           
+         <li><a href="../Assessment.html"> 
+              <div class="icon">
+              <i class="fa fa-book" aria-hidden="true"></i> 
+               <i class="fa fa-book" aria-hidden="true"></i> 
+           </div>
+             <div class="name"><span data-text="">ASSESSMENT</span></div>
+             </a></li>
+           
+           <li><a href="../../contact.html"> 
+              <div class="icon">
+              <i class="fa fa-phone" aria-hidden="true"></i> 
+               <i class="fa fa-phone" aria-hidden="true"></i> 
+           </div>
+           <div class="name"><span data-text="">CONTACT</span></div>
+             </a></li>
+     </ul>
+	</header> 
+     <br> <br><br><br> 
+      
+             
+
+       
+ 
+      <center>
+      <table border="1" cellspacing="0">
+         <thead>
+              
+             <tr> <td align="center" colspan="8" bgcolor="#FFF" height="70"> 
+         
+              
+     <nav>
+  <a href="subli.html">
+            <i class="fa fa-coffee "></i>
+            <b>Sublimation</b>
+        </a>
+  <a href="computer.html">
+            <i class="fa fa-desktop"></i>
+            <b>Computer</b>
+        </a>
+  <a href="paperbag.html">
+            <i class="fa fa-shopping-bag"></i>
+            <b>PaperBag</b>
+        </a>
+          <a href="photocopy.html">
+            <i class="fa fa-camera"></i>
+            <b>Photocopy</b>
+        </a>
+  <a href="lamination.html">
+            <i class="fa fa-print"></i>
+            <b>Lamination</b>
+        </a>
+  <a href="artificialjewel.html">
+            <i class="fa fa-diamond"></i>
+            <b>Jewellerry</b>
+        </a>
+          <a href="soft_toy.html">
+            <i class="fa fa-child"></i>
+            <b>Soft Toy</b>
+        </a>
+         <a href="spiral.html">
+            <i class="fa fa-paperclip"></i>
+            <b>Spiral</b>
+        </a>
+         <a href="doormat.html">
+            <i class="fa-align-justify"></i>
+            <b>doormat</b>
+        </a>
+  <span></span>
+</nav>
+                 </td></tr></thead>  
+           <tr> <td align="center" colspan="8" bgcolor="#FFD700" height="100px"> <br><br>BASIC COMPUTER CHECKLIST</td> </tr>
+             
+            <tr>
+               <th width="20%" rowspan="2">Assessable Outcome</th>
+               <th width="35%" rowspan="2">Assessment Criteria</th>
+               <th width="10%" rowspan="2">Total Marks</th>
+               <th width="10%" rowspan="2">Out of</th>
+               <th width="25%" colspan="2">Marks Allocation</th>
+            </tr>
+            <tr>
+               <th width="12.5%">Theory</th>
+               <th width="12.5%">Skills Practical</th>
+            </tr>
+          
+         <tbody>
+            <tr>
+               <td rowspan="8">Computer Basics</td>
+               <td> Identify the types of Computers like Desktop / Laptop, peripherals and accessories, explain, reproduce in writing or alternatively communicate about their role in simple words</td>
+               <td rowspan="8" align="center">50</td>
+               <td align="center">7</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                   </div>
+                </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark1">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 
+                  </select>
+                   </div>
+                </td>
+            </tr>
+            <tr>
+               <td> Understand hardware / software, Operating System and Applications</td>
+               <td align="center">7</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                   </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark1">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 
+                  </select>
+                   </div>
+                </td>
+            </tr>
+            <tr>
+               <td> Switch on/off computers</td>
+               <td align="center">7</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                   </div></td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark1">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					  
+                  </select>
+                   </div>
+                </td>
+            </tr>
+            <tr>
+               <td> Login with credentials and identify alert sounds (may or may not present) </td>
+               <td align="center">6</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                   </div>
+                </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark1">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                      
+					 
+                  </select>
+                   </div>
+                </td>
+            </tr>
+            <tr>
+               <td> Understand messages in dialog  box, act upon them </td>
+               <td align="center">6</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                   </div>
+                </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark1">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     
+                  </select>
+                   </div> </td>
+            </tr>
+             <tr>
+               <td>	Request for support on errors during start, login   </td>
+               <td align="center">6</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                   </div>
+                 </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark1">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     
+                  </select>
+                   </div>
+                 </td>
+            </tr>
+             <tr>
+               <td>Know, Connect and operate Assistive devices / peripherals </td>
+               <td align="center">6</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                   </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark1">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     
+                  </select>
+                   </div> </td>
+            </tr>
+             <tr>
+               <td> Able to follow safety rules (Do’s and Don’ts) defined in operating the computers and its peripherals </td>
+               <td align="center">5</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     
+                      
+                  </select>
+                   </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark1">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                      
+                  </select>
+                   </div> </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Total</td>
+               <td align="center">50</td>
+               <td align="center">50</td>
+               <td align="center"><input type="text" id="sum" class="forgrand" disabled/></td>
+               <td align="center"><input type="text" id="sum1" class="forgrand1" disabled/></td>
+            </tr>
+              <tr>
+               <td></td>
+               <td>percentage</td>
+               <td align="center"></td>
+               <td align="center"></td>
+               <td align="center"><input type="text" id="p"   disabled/></td>
+               <td align="center"><input type="text" id="p1"  disabled/></td>
+                
+            </tr>
+             
+            <tr>
+               <td rowspan="4">Keyboard Orientation and Typing or Input access</td>
+               <td>Explain the different part of the Simple or Adapted Keyboards, Mouse / Switch / Onscreen Keyboard for typing</td>
+              <td rowspan="4" align="center">50</td>
+               <td align="center">13</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark3">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                  </select>
+                   </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark4">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+					 <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 <option value="8">8</option>
+					 <option value="9">9</option>
+                  </select>
+                   </div>  </td>
+            </tr>
+            <tr>
+               <td> Switch on Screen readers, setup for their preferences and operate keys audio enabled or use Six key typing using Refreshable Braille Display (if required)</td>
+               <td align="center">13</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark3">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                  </select>
+                   </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark4">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+					 <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 <option value="8">8</option>
+					 <option value="9">9</option>
+                  </select>
+                   </div> </td>
+            </tr>
+            <tr>
+               <td>Type simple words to phrases, punctuations with key mapping, typing combinations in Notepad application of Windows Operating System (which finger to use for which key for those who are able to type) or alternative keyboard or techniques(selection / scanning)</td>
+               <td align="center">13</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark3">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                  </select>
+                   </div>   </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark4">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+					 <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 <option value="8">8</option>
+					 <option value="9">9</option>
+                  </select>
+                   </div>    </td>
+            </tr>
+            <tr>
+               <td> Use and operatethe Assistive and adaptive devices, if required for input access / output</td>
+               <td align="center">11</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark3">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                  </select>
+                   </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark4">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 <option value="8">8</option>
+                  </select>
+                   </div>   </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Total</td>
+               <td align="center">50</td>
+               <td align="center">50</td>
+               <td align="center"><input type="text" id="sum2" class="forgrand" disabled/></td>
+               <td align="center"><input type="text" id="sum3" class="forgrand1" disabled/></td>
+            </tr>
+              <tr>
+               <td></td>
+               <td>percentage</td>
+               <td align="center"></td>
+               <td align="center"></td>
+               <td align="center"><input type="text" id="p2"   disabled/></td>
+               <td align="center"><input type="text" id="p3"  disabled/></td>
+                
+            </tr>
+             
+            <tr>
+               <td rowspan="23">Basic Operating System Features and Applications</td>
+               <td>Identify and operate Desktop Elements – Icons / Tool Bar/ System Tray</td>
+               <td rowspan="23" align="center">100</td>
+               <td align="center">6</td>
+			   <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                   </div>   </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+					 
+                  </select>
+                   </div> </td>
+            </tr>
+            <tr>
+               <td> Refer to Calendar for dates / day / find future dates or Change date / time</td>
+               <td align="center">6</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                   </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+					  
+                  </select>
+                   </div>   </td>
+            </tr>
+            <tr>
+               <td> Search Applications by Desktop Icons / execute or typing first few letters and execute</td>
+               <td align="center">6</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                   </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+					  
+                  </select>
+                   </div>  </td>
+            </tr>
+            <tr>
+               <td> Open and Close application</td>
+               <td align="center">6</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+                  </select>
+                   </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+					 <option value="8">8</option>
+					 <option value="9">9</option>
+					 <option value="10">10</option>
+					 <option value="11">11</option>
+					 <option value="12">12</option>
+					 <option value="13">13</option>
+					 <option value="14">14</option>
+                  </select>
+                   </div>   </td>
+            </tr>
+			  <tr>
+               <td> Know basic elements of Window (Title Bar, Menu Bar, Context Menu, Work Area)</td>
+               <td align="center">6</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                   </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                      
+                  </select>
+                   </div> </td>
+            </tr>
+              <tr>
+               <td>Navigate through various elements like Menu, Submenu </td>
+               <td align="center">6</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                   </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                      
+                  </select>
+                   </div>   </td>
+            </tr> <tr>
+               <td> Know Windows Explorer / Operate on My Computer / Drives (Hard Disks and other Storage devices)</td>
+               <td align="center">6</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                   </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                      
+                  </select>
+                   </div>  </td>
+            </tr> <tr>
+               <td>Know organisation of Data as File / Folder</td>
+               <td align="center">4</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                      
+                  </select>
+                   </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                      
+                      
+                  </select>
+                   </div>  </td>
+            </tr> <tr>
+               <td> View through different views (list, details) and navigate</td>
+               <td align="center">4</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                      
+                  </select>
+                   </div></td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                      
+                      
+                  </select>
+                   </div> </td>
+            </tr> <tr>
+               <td>Arrange files by date, type and name</td>
+               <td align="center">4</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     
+                      
+                  </select>
+                   </div>   </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     
+                      
+                  </select>
+                   </div> </td>
+            </tr> <tr>
+               <td>Select and unselect / Create / Rename / Search / Delete Folders / Files</td>
+               <td align="center">4</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                      
+                  </select>
+                   </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                      
+                      
+                  </select>
+                   </div> </td>
+            </tr> <tr>
+               <td> Understand the hierarchy of storage in different levels as folders and files</td>
+               <td align="center">4</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     
+                      
+                  </select>
+                   </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     
+                      
+                  </select>
+                   </div> </td>
+            </tr> <tr>
+               <td>Operate basic commands on folders / files (Search, Select, Copy, Cut, Paste, Insert, Undo, Properties to know size / type)</td>
+               <td align="center">4</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                      
+                  </select>
+                   </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                      
+                      
+                  </select>
+                   </div>  </td>
+            </tr> <tr>
+               <td> Copy / Move to and from external drives</td>
+               <td align="center">4</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     
+                      
+                  </select>
+                   </div>   </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     
+                      
+                  </select>
+                   </div>  </td>
+            </tr> <tr>
+               <td> Impact of delete operation and Recycle bin, and restoration</td>
+               <td align="center">4</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                   
+                      
+                  </select>
+                   </div>   </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                      
+                      
+                  </select>
+                   </div>  </td>
+            </tr> <tr>
+               <td> Navigate through texts like character, word, line, paragraph, document, beginning, and end</td>
+               <td align="center">4</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                      
+                  </select>
+                   </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     
+                      
+                  </select>
+                   </div>    </td>
+            </tr> <tr>
+               <td> Do data entry in Notepad, change font, style / read / using deleting / backspace keys / inserting characters in front / mid / end of words / leave and delete blank lines / split and join words / lines</td>
+               <td align="center">4</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     
+                      
+                  </select>
+                   </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                      
+                      
+                  </select>
+                   </div>   </td>
+            </tr> <tr>
+               <td>Do Find / Select / Copy / Cut / Delete / text / Word wrap / Undo actions</td>
+               <td align="center">3</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                      
+                  </select>
+                   </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                                       
+                      
+                  </select>
+                   </div>   </td>
+            </tr> <tr>
+               <td>Understand and execute using shortcut keys (if required)</td>
+               <td align="center">3</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                    
+                      
+                  </select>
+                   </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                      
+                  </select>
+                   </div>   </td>
+            </tr> <tr>
+               <td>Save, retrieve and open the text data file to / from folders </td>
+               <td align="center">3</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     
+                      
+                  </select>
+                   </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                      
+                  </select>
+                   </div> </td>
+            </tr> <tr>
+               <td> Print the typed text data content</td>
+               <td align="center">3</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     
+                  </select>
+                   </div>      </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                      
+                  </select>
+                   </div>   </td>
+            </tr> <tr>
+               <td> Navigate between multiple Active programs / Desktop</td>
+               <td align="center">3</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     
+                      
+                  </select>
+                   </div></td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                      
+                  </select>
+                   </div> </td>
+            </tr> <tr>
+               <td> Use Calculator application for basic addition, subtraction, multiplication and division</td>
+               <td align="center">6</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark5">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                      
+                  </select>
+                   </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark6">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                                           
+                  </select>
+                   </div>    </td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Total</td>
+               <td align="center">100</td>
+               <td align="center">100</td>
+               <td align="center"><input type="text" id="sum4" class="forgrand" disabled/></td>
+               <td align="center"><input type="text" id="sum5" class="forgrand1" disabled/></td>
+            </tr>
+            
+               <tr>
+               <td></td>
+               <td>percentage</td>
+               <td align="center"></td>
+               <td align="center"></td>
+               <td align="center"><input type="text" id="p4"   disabled/></td>
+               <td align="center"><input type="text" id="p5"  disabled/></td>
+                
+            </tr>            
+          <!--   
+            <tr>
+               <td rowspan="28">Data entry in Word Processors and Features</td>
+               <td>PC1. Understand the use of Word processor and MS Word and other Adapted Word processors in particular</td>
+               <td rowspan="28" align="center">100</td>
+               <td align="center">6</td>
+			    <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                    </div>   </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                      
+                  </select>
+                   </div> </td>
+            </tr>
+          
+            <tr>
+              
+               <td>PC2. Differentiate between simple Word processors and MS Word’s capabilities</td>
+               <td align="center">6</td>
+			    <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     
+                  </select>
+                   </div>  </td>
+            </tr>
+            <tr>
+               <td>PC3. Open Adapted Word processor through Search in Desktop or selecting through Icon </td>
+               <td align="center">4</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                      
+                  </select>
+                   </div>   </td>
+            </tr>
+            <tr>
+               <td> PC4. Enhance the text data entry experience learned in Notepad application by typing, saving, retrieving as document </td>
+               <td align="center">4</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     
+                  </select>
+                       </div>  </td>
+            </tr>
+            <tr>
+               <td>PC5. Do a data entry by inserting pictures / images, formatting with colour, reading and typing the words with assistance of word prediction mechanism </td>
+               <td align="center">4</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                      
+                  </select>
+                   </div> </td>
+            </tr>
+              <tr>
+               <td>PC6. Create documents as projects, save, edit and retrieve them </td>
+               <td align="center">4</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                      
+                  </select>
+                   </div> </td>
+            </tr> <tr>
+               <td>PC7. Open MS Word through Search in Desktop or selecting through Icon </td>
+               <td align="center">4</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                      
+                  </select>
+                   </div>  </td>
+            </tr> <tr>
+               <td>PC8. Navigate through main menus and sub menu items of MS Word related to basic operations and understand their purpose </td>
+               <td align="center">4</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                      
+                  </select>
+                   </div> </td>
+            </tr> <tr>
+               <td>PC9. Open an existing document, read by navigating through text (characters, word, line, paragraphs, page by page) </td>
+               <td align="center">4</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                      
+                  </select>
+                   </div>  </td>
+            </tr> <tr>
+               <td>PC10. Understand and work on page layout, margins, header and footer, borders, page number, column concepts in a simple document </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                      
+                  </select>
+                   </div> </td>
+            </tr> <tr>
+               <td>PC11. Edit the simple document by applying stylesheets for heading, subheading levels, paragraph text, lists in template </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                   </div>  </td>
+            </tr> <tr>
+               <td>PC12. Operate on the text data for commands (Find, Select, Unselect, Copy, Cut, Paste, Replace, Undo, Redo) in a simple document </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                      
+                  </select>
+                   </div></td>
+            </tr> <tr>
+               <td>PC13. Operate the shortcut keys for the editing commands (if required) </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                   </div></td>
+            </tr> <tr>
+               <td>PC14. Save the opened / edited file in a desired location and retrieve by opening again </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                      
+                  </select>
+                   </div> </td>
+            </tr> <tr>
+               <td>PC15. Open the Word processor and create a new document, save and close </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                      
+                  </select>
+                   </div> </td>
+            </tr> <tr>
+               <td>PC16. Understand the importance of formatting, different elements involved in text formatting, and apply the same in a sample document created </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                  
+                      
+                  </select>
+                   </div>  </td>
+            </tr> <tr>
+               <td>PC17. Format the lines, paragraphs with various elements of space, tabs indent, numbering, bulleting lists and hyper links </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                      
+                  </select>
+                   </div>   </td>
+            </tr> <tr>
+               <td>PC18. Insert tables, format the layout with desired row / column, border attributes as required with different layouts of columns and row as per the cognitive abilities </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                      
+                  </select>
+                   </div> </td>
+            </tr> <tr>
+               <td>PC19. Created, edit sample data tables like School mark list, billing, time table or scheduling sheet with functional approaches like select, copy, cut, paste for texts, delete, insert, split, merge for row, and columns </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                      
+                  </select>
+                   </div> </td>
+            </tr> <tr>
+               <td>PC20. Format the document with insert / edit objects and shapes </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div></td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                      
+                  </select>
+                   </div></td>
+            </tr> <tr>
+               <td>PC21. Creating simple projects like personal / business letters, quotes / orders, bio-data in predefined templates or drafting by own with their elements according to their cognitive abilities </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                    
+                  </select>
+                   </div></td>
+            </tr> <tr>
+               <td>PC22. Know spelling and grammar, review a document and correct with auto spellchecking and grammar on </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                 
+                  </select>
+                   </div> </td>
+            </tr> <tr>
+               <td>PC23. Review and comment on an existing document read based on cognitive abilities </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div></td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                   
+                      
+                  </select>
+                   </div>  </td>
+            </tr> <tr>
+               <td>PC24. Understand and use different views like print, reading and web layouts </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                      
+                  </select>
+                   </div> </td>
+            </tr> <tr>
+               <td>PC25. Understand the use of print preview, use it for review and editing the document </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                   </div>  </td>
+            </tr> 
+             <tr>
+               <td>PC26. Print the document understanding and using various options like printer information, page range, copies, paper size and orientation </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                      
+                  </select>
+                   </div> </td>
+            </tr>
+              <tr>
+               <td>PC27.Save the documentation in an internal / external / web drive for future reference </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                      
+                  </select>
+                   </div> </td>
+            </tr> <tr>
+               <td>PC28. Open and explain about the project / books document created </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark7">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                  </select>
+                    </div></td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark8">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                      
+                  </select>
+                   </div> </td>
+            </tr>
+             
+            <tr>
+               <td></td>
+               <td>Total</td>
+               <td align="center">100</td>
+               <td align="center">100</td>
+               <td align="center"><input type="text" id="sum6" class="forgrand" disabled/></td>
+               <td align="center"><input type="text" id="sum7" class="forgrand1" disabled/></td>
+            </tr>
+             
+              <tr>
+               <td></td>
+               <td>percentage</td>
+               <td align="center"></td>
+               <td align="center"></td>
+               <td align="center"><input type="text" id="p4"   disabled/></td>
+               <td align="center"><input type="text" id="p5"  disabled/></td>
+                
+            </tr>    
+             
+            <tr>
+               <td rowspan="25">Spreadsheet Features and Applications</td>
+               <td>PC1. Understand the use of Spreadsheets and MS Excel in particular</td>
+               <td rowspan="25" align="center">100</td>
+               <td align="center">7</td>
+               <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                   </div>
+                </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 
+                  </select>
+                   </div>
+                </td>
+            </tr>
+            <tr>
+               <td>PC2. Differentiate between Word processors Spreadsheet’s use and capabilities in various work settings</td>
+               <td align="center">7</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                    </div>
+                </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 
+                  </select>
+                   </div>
+                </td>
+            </tr>
+            <tr>
+               <td>PC3. Open MS Excel through Search in Desktop or selecting through Icons </td>
+               <td align="center">7</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                    </div>
+                </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					  
+                  </select>
+                   </div>
+                </td>
+            </tr>
+            <tr>
+               <td>PC4. Navigate through main menus and sub menu items of MS Excel related to basic operations and understand their purpose</td>
+               <td align="center">7</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                    </div>
+                </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					
+                  </select>
+                   </div>
+                </td>
+            </tr>
+            <tr>
+               <td>PC5. Open an existing spreadsheet, read and understand by navigating through cells (cells, rows and columns) and two different worksheets and close the same</td>
+               <td align="center">6</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                    </div>
+                </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                      
+					  
+                  </select>
+                   </div>
+                </td>
+            </tr>
+             <tr>
+               <td>PC6. Understand and work on page layout, margins, header and footer, borders, page number, labelling a worksheet, minimum and maximum number of worksheets, in a spreadsheet</td>
+               <td align="center">5</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                     
+                  </select>
+                    </div>
+                 </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     
+					  
+                  </select>
+                   </div>
+                 </td>
+            </tr><tr>
+               <td>PC7. Create a spreadsheet and enter the data in rows and columns, with header row</td>
+               <td align="center">5</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                    
+					  
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC8. Edit the worksheet by applying text, rows and columns attributes like colour, font and style</td>
+               <td align="center">5</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     
+					  
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC9. Operate on the text data for commands (Find, Select, Unselect, Copy, Cut, Paste, Replace, Undo, Redo) in the worksheet</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                    
+					  
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC10. Execute functional elements on rows, columns like insert, delete and merge them, copy a set of rows or the whole worksheet and pasting into another worksheet</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+					  
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC11. Operate the shortcut keys for the editing commands (if required)</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                    
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+					  
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC12. Save the opened / edited spreadsheet in a desired location and retrieve by opening again</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                    
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                    					  
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC13. Understand the importance of formatting, different elements involved in text formatting, including data types like currency, time, date, general text, numbers and apply the same in a sample worksheet created</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+					  
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC14. Apply simple formulas like sum, difference, multiplication and division on the cell elements for totalling, finding average, counting  rows or columns, rounding off</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+					  
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC15. Know and write functions using Sum, product, average, and practise with data sets. And, get on logical functions and nested sets, based on the cognitive abilities</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                  
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+					  
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC16. Sort the elements in columns and rows and apply filters with the header row cell items</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                    
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+					  
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC17. Create Simple projects worksheets like personal / School mark sheet , Retail Billing form, simple inventory stock list in predefined templates or drafting by own with their elements according to their cognitive abilities</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+					  
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC18. Know spelling and grammar, review a worksheet and correct with auto spellchecking and grammar on</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+					  
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC19. Review and comment on an existing document read based on cognitive abilities</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                    
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+					  
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC20. Create and edit simple Charts using the data sets, copy and paste them on to reports based on their cognitive abilities</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC21. Understand and use different views like print, reading and web layouts</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+					  
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC22. Understand the use of print preview, use it for review and editing the worksheet</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+					  
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC23. Print the worksheet with selection options, understanding and also using various options like printer information page range, copies, paper size and orientation </td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+					  
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC24. Save the workbook/sheets in an internal / external / web drive for future reference</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                    
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC25. Open and explain about the project / workbooks sheets created</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark9">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                     
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark10">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     
+					  
+                  </select>
+                   </div>
+             </td>
+            </tr>
+             
+            <tr>
+               <td></td>
+               <td>Total</td>
+               <td align="center">100</td>
+               <td align="center">100</td>
+               <td align="center"><input type="text" id="sum8" class="forgrand" disabled/></td>
+               <td align="center"><input type="text" id="sum9" class="forgrand1" disabled/></td>
+            </tr>
+             
+              <tr>
+               <td></td>
+               <td>percentage</td>
+               <td align="center"></td>
+               <td align="center"></td>
+               <td align="center"><input type="text" id="p4"   disabled/></td>
+               <td align="center"><input type="text" id="p5"  disabled/></td>
+                
+            </tr>    
+             
+            <tr>
+               <td rowspan="20">Internet, Email and Applications</td>
+               <td>PC1. Know what is network of computers, volition of internet</td>
+               <td rowspan="20" align="center">100</td>
+               <td align="center">7</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                   </div>
+                </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 
+                  </select>
+                   </div>
+                </td>
+            </tr>
+            <tr>
+               <td>PC2. Understand the features of Internet that are used in daily life and their impact</td>
+               <td align="center">7</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                    </div>
+                </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 
+                  </select>
+                   </div>
+                </td>
+            </tr>
+             
+              <tr>
+               <td>PC3. Understand the hardware and software requirements for connecting to Internet</td>
+               <td align="center">7</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                    </div>
+                  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 
+                  </select>
+                   </div>
+                  </td>
+            </tr>
+             
+              <tr>
+               <td>PC4. Know the basic of internet content (text, images, lists, videos, audios, interactive elements like flash, forms, links and buttons) of HTML based on their cognitive abilities</td>
+               <td align="center">7</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                    </div>
+                  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 
+                  </select>
+                   </div>   </td>
+            </tr>
+             
+              <tr>
+               <td>PC5. Understand the use of browser, commonly used browser types, and their menu, URL bars, status bar indications, bookmarking and the overall layout</td>
+               <td align="center">7</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                    </div>
+                  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 
+                  </select>
+                   </div>  </td>
+            </tr>
+             
+              <tr>
+               <td>PC6. Search using Google search engine, check the search result lists, navigate by opening in another window / tab</td>
+               <td align="center">7</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 
+                  </select>
+                   </div>      </td>
+            </tr>
+             
+             <tr>
+               <td>PC7. Copy a required text, paste in MS Word, Notepad or Excel as per requirement under guidance and individually and save it</td>
+               <td align="center">6</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                      
+					 
+                  </select>
+                   </div> </td>
+            </tr>
+             <tr>
+               <td>PC8. Fill up simple forms knowing how to operate on their different form elements like text box, radio button, selection list, multiline text box and the action buttons like contact, customer support forms, with information known </td>
+               <td align="center">6</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     
+					 
+                  </select>
+                   </div>  </td>
+            </tr><tr>
+               <td>PC9. Understand the errors or message displayed and act / do entry accordingly</td>
+               <td align="center">6</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                    </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 
+                  </select>
+                   </div>
+             </td>
+            </tr><tr>
+               <td>PC10. Understand the concept of Email.ID, its use and impact in daily life</td>
+               <td align="center">6</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 
+                  </select>
+                   </div></td>
+            </tr><tr>
+               <td>PC11. Create an Email account ,know the different terminology, components and features like user name, password, compose, inbox, search, attachments</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+					 
+                  </select>
+                   </div> </td>
+            </tr><tr>
+               <td>PC12. Login to Gmail or other Email accounts, read content in inbox, reply back to their abilities</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                   </div>  </td>
+            </tr><tr>
+               <td>PC13. Compose simple email, with or without attachments and sent to one or more personsand also reply, forward the messages on requirements</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                      
+                  </select>
+                    </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                   
+					 
+                  </select>
+                   </div> </td>
+            </tr><tr>
+               <td>PC14. Know the concept of address book, how to add contacts and retrieving through composing</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                  
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+					 
+                  </select>
+                   </div>   </td>
+            </tr><tr>
+               <td>PC15. Understand the different elements of composing, address with To, CC, BCC, subject and main message content</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                      
+                  </select>
+                    </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                    
+					 
+                  </select>
+                   </div> </td>
+            </tr><tr>
+               <td>PC16. Print the searched web page or email read / composed with selection options, understanding and also using various options like printer information, page range, copies, paper size and orientation</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+					 
+                  </select>
+                   </div>  </td>
+            </tr><tr>
+               <td>PC17. Save the web page or email read / compose in an internal / external / web drive for future reference</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                      
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+					 
+                  </select>
+                   </div>   </td>
+            </tr><tr>
+               <td>PC18. Delete unnecessary emails noticing the storage warning messages</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                   
+                      
+                  </select>
+                    </div>
+             </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+					 
+                  </select>
+                   </div> </td>
+            </tr><tr>
+               <td>PC19. Understand and take remedial actions on errors like web page not loading, server down, URL not able to found, Networking issue and others</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     
+                      
+                  </select>
+                    </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+					 
+                  </select>
+                   </div>  </td>
+            </tr><tr>
+               <td>PC20 Also, enable and disable Popup windows on requirements based on the cognitive abilities</td>
+               <td align="center">3</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark11">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                    
+                      
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark12">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                   </div> </td>
+            </tr>
+              <tr>
+               <td></td>
+               <td>Total</td>
+               <td align="center">100</td>
+               <td align="center">100</td>
+               <td align="center"><input type="text" id="sum10" class="forgrand" disabled/></td>
+               <td align="center"><input type="text" id="sum11" class="forgrand1" disabled/></td>
+            </tr>
+             
+              <tr>
+               <td></td>
+               <td>percentage</td>
+               <td align="center"></td>
+               <td align="center"></td>
+               <td align="center"><input type="text" id="p4"   disabled/></td>
+               <td align="center"><input type="text" id="p5"  disabled/></td>
+                
+            </tr>    
+              <tr>
+               <td rowspan="11">Presentations Features and Applications</td>
+               <td>PC1. Know the facts and features (slide, transition, animation) of presentation, its need, advantages with use</td>
+               <td rowspan="11" align="center">100</td>
+               <td align="center">10</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark13">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                    
+                  </select>
+                   </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark14">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+                  </select>
+                   </div></td>
+            </tr>
+            <tr>
+               <td>PC2 Know about MS PowerPoint application, understand the layout and navigation through various menus and submenus</td>
+               <td align="center">10</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark13">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>  
+                  </select>
+                    </div>   </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark14">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+                  </select>
+                   </div> </td>
+            </tr>
+              <tr>
+               <td>PC3. Understand the layout of a slides in a presentation (Title, Sub Tile, Footer, Content)</td>
+               <td align="center">10</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark13">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>  
+                  </select>
+                    </div>   </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark14">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+                  </select>
+                   </div> </td>
+            </tr> <tr>
+               <td>PC4. Open and understand the navigation and various slides and their features of an existing presentation both in edit mode as well as slide show to understand the difference</td>
+               <td align="center">10</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark13">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>  
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark14">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 <option value="7">7</option>
+                  </select>
+                   </div>  </td>
+            </tr> <tr>
+               <td>PC5. Develop a simple presentation understanding features like new slide, duplicate slide, copy and paste contents, insert text box for text typing and editing, shapes and objects, images as background, notes for reference</td>
+               <td align="center">9</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark13">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>  
+                  </select>
+                    </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark14">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					
+                  </select>
+                   </div></td>
+            </tr> <tr>
+               <td>PC6. Edit the created presentation for text formatting (font, size, bulleting), image or shape formatting (crop, fill, line, shape effects), insert simple time driven, animated transitions, rearranging the slides by understanding the need of them based on their cognitive abilities</td>
+               <td align="center">9</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark13">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>  
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark14">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+				
+                  </select>
+                   </div>  </td>
+            </tr> <tr>
+               <td>PC7. Develop a presentation about their profile, institution or any other place with the features implemented as a slideshow</td>
+               <td align="center">9</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark13">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>  
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark14">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+		
+                  </select>
+                   </div>  </td>
+            </tr> <tr>
+               <td>PC8. View the presentation through different views and also present it by setting it up as a slide show</td>
+               <td align="center">9</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark13">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>  
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark14">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 
+                  </select>
+                   </div>  </td>
+            </tr> <tr>
+               <td>PC9. Print the presentation developed with selection options to single or selected slides, or whole presentation, understanding and using various options like printer information, page range, copies, paper size and orientation </td>
+               <td align="center">8</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark13">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                    
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark14">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+					 
+                  </select>
+                   </div></td>
+            </tr> <tr>
+               <td>PC10. Save the presentation in an internal / external / web drive for future reference</td>
+               <td align="center">8</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark13">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                      
+                  </select>
+                    </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark14">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+				 
+                  </select>
+                   </div> </td>
+            </tr> <tr>
+               <td>PC11. Open and explain about the project / presentation developed</td>
+               <td align="center">8</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark13">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                    </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark14">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 <option value="6">6</option>
+				 
+                  </select>
+                   </div>  </td>
+            </tr>
+              <tr>
+               <td></td>
+               <td>Total</td>
+               <td align="center">100</td>
+               <td align="center">100</td>
+               <td align="center"><input type="text" id="sum12" class="forgrand" disabled/></td>
+               <td align="center"><input type="text" id="sum13" class="forgrand1" disabled/></td>
+            </tr>
+             
+              <tr>
+               <td></td>
+               <td>percentage</td>
+               <td align="center"></td>
+               <td align="center"></td>
+               <td align="center"><input type="text" id="p4"   disabled/></td>
+               <td align="center"><input type="text" id="p5"  disabled/></td>
+                
+            </tr>    
+             
+             <tr>
+               <td rowspan="7">Related Applications for Data Entry</td>
+               <td>PC1. Know the facts about scanning, and its impact in an employment routine</td>
+               <td rowspan="7" align="center">50</td>
+               <td align="center">8</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark15">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                    
+                  </select>
+                   </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark16">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 
+                  </select>
+                   </div> </td>
+            </tr>
+            <tr>
+               <td>PC2. Understand the features of a scanner and scanning software, page layouts, types of outputs and their purpose, features like preview, and cropping</td>
+               <td align="center">7</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark15">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                    
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark16">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+ 
+                  </select>
+                   </div> </td>
+            </tr>
+             <tr>
+               <td>PC3. Scan, Edit and save documents, images from printed documents in an internal or external drive folders / subfolders </td>
+               <td align="center">7</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark15">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                    </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark16">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                      
+                      
+                      9zp;
+                     <option value="5">5</option>
+ 
+                  </select>
+                   </div> </td>
+            </tr><tr>
+               <td>PC4. Retrieve it for using it in a document or sending as an attachment over email or uploading in a form after editing</td>
+               <td align="center">7</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark15">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                    </div></td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark16">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+ 
+                  </select>
+                   </div>  </td>
+            </tr><tr>
+               <td>PC5. Know the features of an OCR software and run OCR on a scanned document</td>
+               <td align="center">7</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark15">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark16">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+ 
+                  </select>
+                   </div> </td>
+            </tr><tr>
+               <td>PC6. Get the converted text compared with the original for errors, do simple proof reading and correction</td>
+               <td align="center">7</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark15">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark16">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+ 
+                  </select>
+                   </div> </td>
+            </tr><tr>
+               <td>PC7. Open and explain about the project / presentation developed</td>
+               <td align="center">7</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark15">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                
+                  </select>
+                    </div></td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark16">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+ 
+                  </select>
+                   </div>  </td>
+            </tr>
+              <tr>
+               <td></td>
+               <td>Total</td>
+               <td align="center">50</td>
+               <td align="center">50</td>
+               <td align="center"><input type="text" id="sum14" class="forgrand" disabled/></td>
+               <td align="center"><input type="text" id="sum15" class="forgrand1" disabled/></td>
+            </tr>
+             
+              <tr>
+               <td></td>
+               <td>percentage</td>
+               <td align="center"></td>
+               <td align="center"></td>
+               <td align="center"><input type="text" id="p4"   disabled/></td>
+               <td align="center"><input type="text" id="p5"  disabled/></td>
+                
+            </tr>    
+             -->
+             <tr>
+               <td rowspan="8">Self and Work Management</td>
+               <td> Establish relationship with the fellow team members, supervisors and understand the work requirements</td>
+               <td rowspan="8" align="center">50</td>
+               <td align="center">8</td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark17">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                    
+                  </select>
+                   </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark18">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+					 
+                  </select>
+                   </div>  </td>
+            </tr>
+            <tr>
+               <td> Keep immediate work area clean and tidy</td>
+               <td align="center">7</td>
+                <td align="center"><div class="select">
+                  <select class="mark17">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                    </div>   </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark18">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+ 
+                  </select>
+                   </div>    </td>
+            </tr>
+             <tr>
+               <td> Utilize time effectively</td>
+               <td align="center">7</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark17">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                    </div>   </td>
+               <td align="center">
+                   
+                   <div class="select">
+                  <select class="mark18">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="5">5</option>
+ 
+                  </select>
+                   </div>  </td>
+            </tr><tr>
+               <td> User sources efficiently</td>
+               <td align="center">6</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark17">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark18">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                      
+ 
+                  </select>
+                   </div>  </td>
+            </tr><tr>
+               <td> Work in line with organization’s policies and procedures under guidance</td>
+               <td align="center">6</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark17">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark18">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                    
+ 
+                  </select>
+                   </div>  </td>
+            </tr><tr>
+               <td> Work within the limits of job role</td>
+               <td align="center">6</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark17">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                    </div>   </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark18">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                    
+ 
+                  </select>
+                   </div>   </td>
+            </tr><tr>
+               <td> Obtain guidance from appropriate people, where necessary</td>
+               <td align="center">6</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark17">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     
+                  </select>
+                    </div> </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark18">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                    
+ 
+                  </select>
+                   </div> </td>
+            </tr><tr>
+               <td> Ensure work meet the agreed requirements</td>
+               <td align="center">5</td>
+                <td align="center">
+                    <div class="select">
+                  <select class="mark17">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                    
+                  </select>
+                    </div>  </td>
+               <td align="center">
+                   <div class="select">
+                  <select class="mark18">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                      
+ 
+                  </select>
+                   </div>  </td>
+            </tr>
+             
+                <tr>
+               <td></td>
+               <td>Total</td>
+               <td align="center">50</td>
+               <td align="center">50</td>
+               <td align="center"><input type="text" id="sum16" class="forgrand" disabled/></td>
+               <td align="center"><input type="text" id="sum17" class="forgrand1" disabled/></td>
+            </tr>
+              <tr>
+               <td></td>
+               <td>percentage</td>
+               <td align="center"></td>
+               <td align="center"></td>
+               <td align="center"><input type="text" id="p16"   disabled/></td>
+               <td align="center"><input type="text" id="p17"  disabled/></td>
+                
+            </tr>
+             
+             <tr>
+               <td></td>
+               <td>Grand Total</td>
+               <td></td>
+               <td align="center">350</td>
+               <td align="center"><input type="text" id="grand1" disabled/></td>
+               <td align="center"><input type="text" id="grand2" disabled/></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Percentage weightage</td>
+               <td></td>
+               <td></td>
+               <td align="center"><input type="text" id="gp"   disabled/></td>
+               <td align="center"><input type="text" id="gp1"  disabled/></td>
+            </tr>
+            <tr>
+               <td></td>
+               <td>Minimum pass % to qualify
+                  (aggregate)
+               </td>
+    <td colspan="4" align="center"> <br><br>60%<br><br><br></td>
+            </tr>
+         </tbody>
+      </table>
+     
+<center>       
+<table class="suggest">
+<tbody>
+<tr>
+<td colspan="6" width="599">
+<p>Validate Suggestion</p>
+</td>
+</tr>
+<tr>
+<td width="172">
+<p>&nbsp;</p>
+</td>
+<td width="52">
+<p>Out of</p>
+</td>
+<td width="75">
+<p>Theory</p>
+</td>
+<td width="104">
+<p>Skills Practical</p>
+</td>
+<td width="52">
+<p>Total</p>
+</td>
+<td width="144">
+<p>Recognition</p>
+</td>
+</tr>
+<tr>
+<td width="172">
+<p>GRAND TOTAL</p>
+</td>
+<td width="52">
+<p>350</p>
+</td>
+<td width="75">
+<p>105</p>
+</td>
+<td width="104">
+<p>245</p>
+</td>
+<td width="52">
+
+</td>
+<td rowspan="3" width="144">
+<p>&nbsp;</p>
+<p>Approved</p>
+</td>
+</tr>
+<tr>
+<td width="172">
+<p>PERCENTAGE WEIGHT AGE</p>
+</td>
+<td width="52">
+<p>&nbsp;</p>
+</td>
+<td width="75">
+<p>30%</p>
+</td>
+<td width="104">
+<p>70%</p>
+</td>
+<td width="52">
+<p>&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td width="172">
+<p>STATUS</p>
+</td>
+<td width="52">
+<p>&nbsp;</p>
+</td>
+<td width="75">
+<p>Pass</p>
+</td>
+<td width="104">
+<p>Pass</p>
+</td>
+<td width="52">
+<p>Pass</p>
+</td>
+</tr>
+<tr>
+<td colspan="6" width="599">
+<p>General Information</p>
+</td>
+</tr>
+<tr>
+<td colspan="6" width="599">
+ 
+    
+<center>
+<table class="criteria" width="135">
+<tbody>
+<tr>
+<td bgcolor="red" width="100">
+<p>Below 30%</p>
+</td>
+<td bgcolor="red" width="235">
+<p>needs exclusive training</p>
+</td>
+</tr>
+<tr>
+<td  bgcolor="yellow" width="100">
+<p>30%- 60%</p>
+</td>
+<td bgcolor="yellow" width="235">
+<p>needs concurrent training</p>
+</td>
+</tr>
+<tr>
+<td bgcolor="orange" width="100">
+<p>60%- 80%</p>
+</td>
+<td bgcolor="orange" width="235">
+<p>concurrent training along with other training</p>
+</td>
+</tr>
+<tr>
+<td  bgcolor="green" width="100">
+<p>above&nbsp; 80%</p>
+</td>
+<td  bgcolor="green"width="235">
+<p>promoted for skill training</p>
+</td>
+</tr>
+</tbody>
+</table>
+</center>    
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+          
+           <br><br> 
+          
+         <div class="wrap">
+                      <button class="button" type="submit" name="submit_btn" value="input">SUBMIT</button>
+                      </div></center>
+                   <br><br> <br><br>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script type="text/javascript">
+         $('.mark').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum').val(sum);
+               document.getElementById('p').value=(sum/30) * 100; 
+         }); 
+         
+         $('.mark1').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark1').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum1').val(sum);
+               document.getElementById('p1').value=(sum/35) * 100; 
+         }); 
+         
+                  $('body').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.forgrand').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#grand1').val(sum);
+               document.getElementById('gp').value=(sum/105) * 100; 
+         }); 
+         
+                                    $('body').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.forgrand1').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#grand2').val(sum);
+               document.getElementById('gp1').value=(sum/245) * 100; 
+         }); 
+         
+         $('.mark3').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark3').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum2').val(sum);
+               document.getElementById('p2').value=(sum/15) * 100; 
+         }); 
+         
+         $('.mark4').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark4').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum3').val(sum);
+               document.getElementById('p3').value=(sum/15) * 100; 
+         });   
+         
+         $('.mark5').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark5').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum4').val(sum);
+               document.getElementById('p4').value=(sum/15) * 100; 
+         }); 
+         
+         $('.mark6').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark6').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum5').val(sum);
+               document.getElementById('p5').value=(sum/15) * 100; 
+         }); 
+         
+         $('.mark7').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark7').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum6').val(sum);
+              document.getElementById('p6').value=(sum/15) * 100;  
+         }); 
+         
+         $('.mark8').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark8').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum7').val(sum);
+               document.getElementById('p7').value=(sum/15) * 100; 
+         }); 
+         
+         $('.mark9').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark9').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum8').val(sum);
+              document.getElementById('p8').value=(sum/15) * 100;  
+         }); 
+         
+         $('.mark10').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark10').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum9').val(sum);
+               document.getElementById('p9').value=(sum/15) * 100; 
+         }); 
+         
+          $('.mark11').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark11').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum10').val(sum);
+               document.getElementById('p10').value=(sum/15) * 100; 
+         }); 
+         
+          $('.mark12').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark12').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum11').val(sum);
+               document.getElementById('p11').value=(sum/15) * 100; 
+         });  
+          
+          $('.mark13').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark13').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum12').val(sum);
+              document.getElementById('p12').value=(sum/15) * 100;  
+         });  
+          
+          $('.mark14').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark14').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum13').val(sum);
+              document.getElementById('p13').value=(sum/15) * 100;  
+         }); 
+          
+          $('.mark15').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark15').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum14').val(sum);
+               document.getElementById('p14').value=(sum/15) * 100; 
+         }); 
+          
+          $('.mark16').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark16').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum15').val(sum);
+              document.getElementById('p15').value=(sum/15) * 100;  
+         }); 
+          
+          $('.mark17').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark17').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum16').val(sum);
+              document.getElementById('p16').value=(sum/15) * 100;  
+         }); 
+          
+          $('.mark18').click(function () {
+          
+             // initialize the sum (total price) to zero
+             var sum = 0;
+              
+             // we use jQuery each() to loop through all the textbox with 'price' class
+             // and compute the sum for each loop
+             $('.mark18').each(function() {
+                 sum += Number($(this).val());
+             });
+              
+             // set the computed value to 'totalPrice' textbox
+             $('#sum17').val(sum);
+               document.getElementById('p17').value=(sum/15) * 100; 
+         }); 
+      </script>
+        </center>
+      </div>
+   </body>
+</html>
