@@ -118,11 +118,11 @@ export default function Home() {
                    <Ttitle/>
                     <tbody>
                       
-                    <PrintingTableRow outcome="1.उर्ध्वपातन मुद्रण" crieteria="1.पेंटिंग के उर्ध्वपातन की प्रक्रिया का वर्णन करें" outof={50} totalMarks={10} rowspan={5} marksCount={3} marks1Count={7} no={1} setSums={setSums}/>
+                    <PrintingTableRow outcome="1.सब्लिमेशन प्रिंटिंग" crieteria="1.सब्लिमेशन प्रिंटिंग की प्रक्रिया का वर्णन करें" outof={50} totalMarks={10} rowspan={5} marksCount={3} marks1Count={7} no={1} setSums={setSums}/>
                     <PrintingRow criteria="2.के लिए रंग संयोजन का चयन करेंइमेजिस प्रचारात्मक उत्पादों/खेल वस्तुओं/साइनेज वस्तुओं/कपड़ा/पुरस्कारों के लिए।" totalMark={10} marksCount={3} marks1Count={7} no={1} setSums={setSums}/>
                     <PrintingRow criteria="3.प्रचारात्मक उत्पादों/खेल वस्तुओं/साइनेज वस्तुओं/कपड़ा/पुरस्कारों के लिए ग्राफिक छवि बनाना।" totalMark={10} marksCount={3} marks1Count={7} no={1} setSums={setSums} />
                     <PrintingRow criteria="4.रंगों को ठीक करना और छवियों पर रंगों का प्रबंधन करना" totalMark={10} marksCount={3} marks1Count={7} no={1} setSums={setSums}/>
-                    <PrintingRow criteria="5.एक किस्म तैयार कर रहा हूँ छवियों का और उच्च बनाने की क्रिया मुद्रण।" totalMark={10} marksCount={3} marks1Count={7} no={1} setSums={setSums}/>
+                    <PrintingRow criteria="5.उत्पाद के अनुसार छवि का प्रबंधन करना " totalMark={10} marksCount={3} marks1Count={7} no={1} setSums={setSums}/>
                      <TotalRow outOf={50} totalMarks={50} ti={1} no={1} sums={sums} theory={15} practical={35}/>
                      <PrintingTableRow outcome="2.मुद्रण के उर्ध्वपातन की प्रक्रिया का वर्णन करें
                      " crieteria="1.छवि का चयन"outof={50} totalMarks={13} rowspan={4} marksCount={4} marks1Count={9} no={2} setSums={setSums}/>
@@ -130,13 +130,13 @@ export default function Home() {
                     <PrintingRow criteria="3.वस्तु पर छवि लाना" totalMark={13} marksCount={4} marks1Count={9} no={2} setSums={setSums}/>
                     <PrintingRow criteria="4.वस्तु को सूखने के लिए रखना।" totalMark={11} marksCount={3} marks1Count={8} no={2} setSums={setSums}/>
                     <TotalRow outOf={50} totalMarks={50} ti={2} sums={sums} theory={15} practical={35}/>
-                    <PrintingTableRow outcome="3.रंग चुनेंसंयोजन के लिएइमेजिस के लिएप्रचार उत्पाद/खेल आइटम/साइनेज आइटम/वस्त्र/पुरस्कार।" crieteria="1.के लिए रंग संयोजन का चयन करेंप्रचार उत्पादों के लिए छवि" outof={100} totalMarks={20} rowspan={5} marksCount={6} marks1Count={14}  no={3} setSums={setSums}/>
-                    <PrintingRow criteria="2.के लिए रंग संयोजन का चयन करेंखेल के लिए छवि" totalMark={20} marksCount={6} marks1Count={14}  no={3} setSums={setSums}/>
+                    <PrintingTableRow outcome="3.रंग संयोजन" crieteria="1. रंग संयोजन का चयन" outof={100} totalMarks={20} rowspan={5} marksCount={6} marks1Count={14}  no={3} setSums={setSums}/>
+                    <PrintingRow criteria="2. छवि के लिए रंग संयोजन का चयन करें" totalMark={20} marksCount={6} marks1Count={14}  no={3} setSums={setSums}/>
                     <PrintingRow criteria="3.Select the color combination for image for Signage" totalMark={20} marksCount={6} marks1Count={14} no={3} setSums={setSums}/>
-                    <PrintingRow criteria="4.के लिए रंग संयोजन का चयन करेंसाइनेज के लिए छवि" totalMark={20} marksCount={6} marks1Count={14} no={3} setSums={setSums} />
-                    <PrintingRow criteria="5.पुरस्कारों के लिए छवि के लिए रंग संयोजन का चयन करें" totalMark={20} marksCount={6} marks1Count={14} no={3} setSums={setSums} />
+                    <PrintingRow criteria="4.साइनेज के लिए छवि रंग संयोजन का चयन करें" totalMark={20} marksCount={6} marks1Count={14} no={3} setSums={setSums} />
+                    <PrintingRow criteria="5.पुरस्कारों के लिए रंग संयोजन का चयन करें" totalMark={20} marksCount={6} marks1Count={14} no={3} setSums={setSums} />
                     <TotalRow outOf={100} totalMarks={100} ti={3} sums={sums} theory={30} practical={70}/>
-                    <PrintingTableRow outcome="4.के लिए ग्राफ़िक छवि बनाना प्रचार उत्पाद/खेल सामग्री/साइनेज आइटम/वस्त्र/पुरस्कार।" crieteria="1.प्रचारात्मक उत्पादों के लिए ग्राफिक छवि बनाना" outof={100} totalMarks={20} rowspan={5} marksCount={6} marks1Count={14} no={4} setSums={setSums} />
+                    <PrintingTableRow outcome="4.प्रचार उत्पाद/खेल सामग्री/साइनेज आइटम/वस्त्र/पुरस्कार के लिए ग्राफ़िक छवि बनाना" crieteria="1.प्रचारात्मक उत्पादों के लिए ग्राफिक छवि बनाना" outof={100} totalMarks={20} rowspan={5} marksCount={6} marks1Count={14} no={4} setSums={setSums} />
                     <PrintingRow criteria="2.प्रचारात्मक खेल छवि के लिए ग्राफिक छवि बनाना" totalMark={20} marksCount={6} marks1Count={14} no={4} setSums={setSums} />
                     <PrintingRow criteria="3.साइनेज आइटम के लिए ग्राफिक छवि बनाना" totalMark={20} marksCount={6} marks1Count={14} no={4} setSums={setSums} />
                     <PrintingRow criteria="4.वस्त्रों के लिए ग्राफिक छवि बनाना" totalMark={20} marksCount={6} marks1Count={14} no={4} setSums={setSums} />
